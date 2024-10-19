@@ -1,0 +1,153 @@
+---------------Episode 1----------------------
+
+what is a CDN
+
+A content delivery network (CDN) is a geographically distributed group 
+of servers that caches content close to end users. A CDN allows for the 
+quick transfer of assets needed for loading Internet content, including HTML 
+pages, JavaScript files, stylesheets, images, and videos.
+
+1. Improving website load times
+2. Reducing bandwidth costs
+3. Increasing content availability and redundancy
+4. Increasing content availability and redundancy
+
+
+what is crossorigin attribute?
+
+The crossorigin content attribute on media elements is a CORS 
+settings attribute. The crossorigin attribute, valid on the <audio>, 
+<img>, <link>, <script>, and <video> elements.
+You can use the following <script> element to tell a browser to
+execute the https://example.com/example-framework.js script without sending user-credentials.
+
+
+const parent = React.createElement("h1", {}, [
+  React.createElement("h1", {}, "Hello World!"),
+  React.createElement("h2", {}, "Hello World 2!"),
+]);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(parent);
+
+root.render will replace the exisitng content from root and will render the passed react element.
+
+-------------------------------Episode 2: Egniting app using parcel and its strenth ----------------------
+
+NPM -> Is manages the node packages but not abbrevation of Node package manager.
+
+Package.json is a configuration file for NPM.
+
+Thare two types of dependancy:
+Dev-dependancy: dependancy requiered for development like optimization, bundling, extra called dev-dependancy.
+use -D before bundle name at the time of installing that.
+Normal-dependancy: these are used for development of the feature/funtionality of the react app.
+
+PARCEL: Parcel. js is an open-source bundler. It supports many popular languages like Typescript 
+and SASS, and can also handle file types like images and fonts. Parcel comes with a few extra 
+tools built-in: a development server, diagnostics, minification, and even image compression.
+- Dev Build
+- Local server
+- Hot module repacement (HMR)
+- File watching algoriths
+- Faster build because of parcel cache.
+- Image optimiztion
+- Minification for file
+- Building
+- File Compression
+- Consistant Hashing
+- Code splitting
+- Defferencial bundling - to support older browser
+- Diagnostics
+- Error handling
+- Provides https
+- Tree Shaking - Remove unused code
+- Different buld for dev and production
+
+What is the difference between carret(^) and tilde (~) in package.json?
+In this "parcel": "^2.12.0", if carret is there it mean Parcel will install minor verions aumatically
+but is case of tilde (~) latest version will be istalled by parcel either it will be masor or minor.
+That is why we generally use carret in the package.json.
+
+
+What is the package.lock.json in the project? What is the difference between package.json?
+package.lock.json keeps the exact record of exact version. but the package.json having approx version.
+It is also having the integrity sha to verify the content.
+
+What is node_modules?
+Node modules having all the packages including dependancy of depandancy. Transient depandancy.
+
+What is NPX?
+NPX is used to run the packages but npm used to istall something for to run script metion in the package.json.
+
+-------------------------------Episode 3: Basic foundation of react App, js and JSX ----------------------
+
+JSX?
+
+JSX is not HTML in JS.
+It is HTML-like  XML-like syntax.
+
+Babel converts JSX to React element and react element is passed to render to get html.
+Babel traspile the code to support old version of browsers.
+
+Single line JXS is okay without paranthesis but multiline JSX should under ();
+
+
+React Component-
+1. Class Based components
+2. Function based components
+
+
+Function based components: Just a normal js funtion that return the valid JSX; Names start with capital latter.
+
+
+Component Composition: Placing react componet inside component.
+<div>
+  <Title />
+  <h1>React with functional component</h1>
+</div>
+
+-------------------------------Episode 4: ----------------------
+
+Config Driven UI -> Render the UI on the basis of data coming from API.
+
+Never used index as key in map.
+
+
+
+-------------------------------Episode 5: React hooks----------------------
+
+Two type of Export import
+
+-Default Export/import
+
+export default Component;
+import Component from "path"
+
+- Named export/import
+
+export const Name;
+import {Name} from "path";
+
+React Hooks: React hook is normal JavaScript function written by fb devs.
+
+UseState(): Super powerful react varibles
+UseEffect()
+
+State Variable:
+When ever state variable updates react re-render the component;
+
+Reconciliation algoriths or ReactFiber:
+Finding the diff is called Reconciliation.
+ReactFibre is algorithm.
+Tries to find the difference between old DOM and new DOM.
+
+Virtual Dom: It is the represtation of actual DOM. It is a react element. It is a object. This object is 
+a virtual DOM.
+
+
+
+
+
+
+
+
